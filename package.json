@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "npx tsc",
-    "test": "npx jest"
+    "build": "tsc",
+    "test": "jest"
   },
   "repository": {
     "type": "git",
