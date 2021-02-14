@@ -11,7 +11,7 @@ describe("test add function", () => {
 });
 
 describe("test mul function", () => {
-  it("should return 15 for add(10,5)", () => {
+  it("should return 15 for mul(3,5)", () => {
     expect(mul(3, 5)).toBe(15);
   });
 });
