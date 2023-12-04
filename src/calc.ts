@@ -1,3 +1,5 @@
+import { Color  } from "@cesium/engine";
+
 export function add(x: number, y: number): number {
   return x + y;
 }

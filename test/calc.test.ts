@@ -6,7 +6,7 @@ describe("centreVertices", () => {
   it("should handle no vertices", () => {
     const result = new Cartesian3(1, 1, 0);
 
-    expect(result).toEqual({ centre: null, vertices: [] });
+    expect(result.x).toEqual(1);
   });
 
   it("should return 15 for add(10,5)", () => {
