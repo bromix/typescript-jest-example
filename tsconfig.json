@@ -2,10 +2,10 @@
   "include": ["./src/**/*"],
   "exclude": ["node_modules"],
   "compilerOptions": {
-    "module": "Node16", // or "NodeNext"
+    "module": "NodeNext", // or "NodeNext"
     "target": "ESNext",
     "moduleResolution": "Node16", // or "NodeNext"
-    "outDir": "./out",                        /* Redirect output structure to the directory. */
+    "outDir": "./dist",                        /* Redirect output structure to the directory. */
     "rootDir": "./src",                       /* Specify the root directory of input files. Use to control the output directory structure with --outDir. */
     "strict": true,                           /* Enable all strict type-checking options. */
     "esModuleInterop": true,                  /* Enables emit interoperability between CommonJS and ES Modules via creation of namespace objects for all imports. Implies 'allowSyntheticDefaultImports'. */
