@@ -297,7 +297,7 @@
   resolved "https://registry.yarnpkg.com/@bcoe/v8-coverage/-/v8-coverage-0.2.3.tgz#75a2e8b51cb758a7553d6804a5932d7aace75c39"
   integrity sha512-0hYQ8SB4Db5zvZB4axdMHGwEaQjkZzFjQiN9LVYvIFB2nSUHW9tYpxWriPrWDASIxiaXax83REcLxuSdnGPZtw==
 
-"@cesium/engine@^6.1.1":
+"@cesium/engine@6.x", "@cesium/engine@^6.1.1":
   version "6.1.1"
   resolved "https://registry.yarnpkg.com/@cesium/engine/-/engine-6.1.1.tgz#eeef7f68b4924ed658996090fccabcae7fa71f73"
   integrity sha512-PY8A742SR5rHagjaDCG7G6LWYeMXdyBJOoTkkaaLGh4XYBCdan/aygPO0CTTq26hAyjf9Ugi7HCoRe0ruNvgGg==
@@ -580,13 +580,13 @@
   dependencies:
     node-fetch "^2.6.1"
 
-"@propelleraero/geometry-algorithms@^1.1.1":
-  version "1.1.1"
-  resolved "https://registry.yarnpkg.com/@propelleraero/geometry-algorithms/-/geometry-algorithms-1.1.1.tgz#9b33d05945294bd19079877ec659373b4a54fcbf"
-  integrity sha512-vMGaC5OZOZoa6a7Gac/RdbJQUg+FRAeRyAUcI4buRECG9PU34aNAzk6HT/5yPwEOOagVoG1yqB2igiIdPfQPUA==
+"@propelleraero/geometry-algorithms@^2.0.1":
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/@propelleraero/geometry-algorithms/-/geometry-algorithms-2.0.1.tgz#ccf285148ee4eb890613d4fd6e2532bba4647aa5"
+  integrity sha512-Dye4ouI7ySrkXuKXpwodkRQ/uiFba85nWVbuZ96yWuhF+Oh4syTlYBJVzrESbfP8WYi2rC16uLgWbZDgl6fEgg==
   dependencies:
-    "@types/rtree" "^1.4.28"
-    lodash "4.x"
+    "@cesium/engine" "6.x"
+    lodash-es "^4.17.21"
     rtree "^1.4.2"
 
 "@protobufjs/aspromise@^1.1.1", "@protobufjs/aspromise@^1.1.2":
@@ -739,11 +739,6 @@
   integrity sha512-XJavIpZqiXID5Yxnxv3RUDKTN5b81ddNC3ecsA0SoFXz/QU8OGBwZGMomiq0zw+uuqbL/krztv/DINAQ/EV4gg==
   dependencies:
     undici-types "~5.26.4"
-
-"@types/rtree@^1.4.28":
-  version "1.4.30"
-  resolved "https://registry.yarnpkg.com/@types/rtree/-/rtree-1.4.30.tgz#7df312a59e29860510524aeb1fb19a009777fef4"
-  integrity sha512-FjELrbtL0ZT6adCFFROkhPmxnXXx0nyPG1xDL972Te7yfsBhE3wfqtobicu+ok1xg91NFccEc4UnHQ+JdlDmJw==
 
 "@types/stack-utils@^2.0.0":
   version "2.0.3"
@@ -1868,15 +1863,15 @@ locate-path@^5.0.0:
   dependencies:
     p-locate "^4.1.0"
 
+lodash-es@^4.17.21:
+  version "4.17.21"
+  resolved "https://registry.yarnpkg.com/lodash-es/-/lodash-es-4.17.21.tgz#43e626c46e6591b7750beb2b50117390c609e3ee"
+  integrity sha512-mKnC+QJ9pWVzv+C4/U3rRsHapFfHvQFoFB92e52xeyGMcX6/OlIl78je1u8vePzYZSkkogMPJ2yjxxsb89cxyw==
+
 lodash.memoize@4.x:
   version "4.1.2"
   resolved "https://registry.yarnpkg.com/lodash.memoize/-/lodash.memoize-4.1.2.tgz#bcc6c49a42a2840ed997f323eada5ecd182e0bfe"
   integrity sha512-t7j+NzmgnQzTAYXcsHYLgimltOV1MXHtlOWf6GjL9Kj8GK5FInw5JotxvbOs+IvV1/Dzo04/fCGfLVs7aXb4Ag==
-
-lodash@4.x:
-  version "4.17.21"
-  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.21.tgz#679591c564c3bffaae8454cf0b3df370c3d6911c"
-  integrity sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==
 
 long@^5.0.0:
   version "5.2.3"

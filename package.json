@@ -27,6 +27,6 @@
   "dependencies": {
     "@cesium/engine": "^6.1.1",
     "@propelleraero/cesium-loaders": "^4.9.0",
-    "@propelleraero/geometry-algorithms": "^1.1.1"
+    "@propelleraero/geometry-algorithms": "^2.0.1"
   }
 }
