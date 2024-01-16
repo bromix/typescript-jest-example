@@ -23,5 +23,9 @@
     "jest": "^29.x",
     "ts-jest": "^29.x",
     "typescript": "^5.x"
+  },
+  "dependencies": {
+    "@propelleraero/cesium-loaders": "^5.1.0",
+    "cesium": "^1.112.0"
   }
 }
