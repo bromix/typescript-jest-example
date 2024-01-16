@@ -1,11 +1,6 @@
 import { add, mul } from "../src/calc";
 //import { add as add1 } from "../src/calc2";
 import { Cartesian3 } from "@cesium/engine";
-import {
-  centreVertices,
-  computeFaceNormals,
-  computeVertexNormals,
-} from '@propelleraero/geometry-algorithms';
 
 describe("centreVertices", () => {
 

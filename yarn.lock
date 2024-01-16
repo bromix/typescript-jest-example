@@ -297,7 +297,7 @@
   resolved "https://registry.yarnpkg.com/@bcoe/v8-coverage/-/v8-coverage-0.2.3.tgz#75a2e8b51cb758a7553d6804a5932d7aace75c39"
   integrity sha512-0hYQ8SB4Db5zvZB4axdMHGwEaQjkZzFjQiN9LVYvIFB2nSUHW9tYpxWriPrWDASIxiaXax83REcLxuSdnGPZtw==
 
-"@cesium/engine@6.x", "@cesium/engine@^6.1.1":
+"@cesium/engine@^6.1.1":
   version "6.1.1"
   resolved "https://registry.yarnpkg.com/@cesium/engine/-/engine-6.1.1.tgz#eeef7f68b4924ed658996090fccabcae7fa71f73"
   integrity sha512-PY8A742SR5rHagjaDCG7G6LWYeMXdyBJOoTkkaaLGh4XYBCdan/aygPO0CTTq26hAyjf9Ugi7HCoRe0ruNvgGg==
@@ -321,6 +321,39 @@
     rbush "^3.0.1"
     topojson-client "^3.1.0"
     urijs "^1.19.7"
+
+"@cesium/engine@^6.2.0":
+  version "6.2.0"
+  resolved "https://registry.yarnpkg.com/@cesium/engine/-/engine-6.2.0.tgz#d0ef9af567f73e30f279f592423f2833c438eacc"
+  integrity sha512-9Iv0JFsCp7wGi7ZzP88WlkBMfOjA49obFJ4I+p2gNIGSmKZRPdstzEqUWjyJDZeck3sZaLfYUsyRDmDCgOIaBw==
+  dependencies:
+    "@tweenjs/tween.js" "^21.0.0"
+    "@zip.js/zip.js" "2.4.x"
+    autolinker "^4.0.0"
+    bitmap-sdf "^1.0.3"
+    dompurify "^3.0.2"
+    draco3d "^1.5.1"
+    earcut "^2.2.4"
+    grapheme-splitter "^1.0.4"
+    jsep "^1.3.8"
+    kdbush "^4.0.1"
+    ktx-parse "^0.6.0"
+    lerc "^2.0.0"
+    mersenne-twister "^1.1.0"
+    meshoptimizer "^0.20.0"
+    pako "^2.0.4"
+    protobufjs "^7.1.0"
+    rbush "^3.0.1"
+    topojson-client "^3.1.0"
+    urijs "^1.19.7"
+
+"@cesium/widgets@^4.3.1", "@cesium/widgets@^4.4.0":
+  version "4.4.0"
+  resolved "https://registry.yarnpkg.com/@cesium/widgets/-/widgets-4.4.0.tgz#573d9d7e834053b33f386f09811e26e15402c829"
+  integrity sha512-K3kGy9rQAc1HVhPy4YE0ZIYK2RoQ9USpYh2l6NqtqFYXQy7buyctPjPC8aOvqX2+3Nn91+AOOyD1DHmkezR9BA==
+  dependencies:
+    "@cesium/engine" "^6.2.0"
+    nosleep.js "^0.12.0"
 
 "@istanbuljs/load-nyc-config@^1.0.0":
   version "1.1.0"
@@ -518,17 +551,6 @@
     slash "^3.0.0"
     write-file-atomic "^4.0.2"
 
-"@jest/types@^26.6.2":
-  version "26.6.2"
-  resolved "https://registry.yarnpkg.com/@jest/types/-/types-26.6.2.tgz#bef5a532030e1d88a2f5a6d933f84e97226ed48e"
-  integrity sha512-fC6QCp7Sc5sX6g8Tvbmj4XUTbyrik0akgRy03yjXbQaBWWNWGE7SGtJk98m0N8nzegD/7SggrUlivxo5ax4KWQ==
-  dependencies:
-    "@types/istanbul-lib-coverage" "^2.0.0"
-    "@types/istanbul-reports" "^3.0.0"
-    "@types/node" "*"
-    "@types/yargs" "^15.0.0"
-    chalk "^4.0.0"
-
 "@jest/types@^29.6.3":
   version "29.6.3"
   resolved "https://registry.yarnpkg.com/@jest/types/-/types-29.6.3.tgz#1131f8cf634e7e84c5e77bab12f052af585fba59"
@@ -573,21 +595,13 @@
     "@jridgewell/resolve-uri" "^3.1.0"
     "@jridgewell/sourcemap-codec" "^1.4.14"
 
-"@propelleraero/cesium-loaders@^4.9.0":
-  version "4.9.0"
-  resolved "https://registry.yarnpkg.com/@propelleraero/cesium-loaders/-/cesium-loaders-4.9.0.tgz#5da9a81e1d13a9a66ee90374879068fc65310d47"
-  integrity sha512-zK/JY97OJ7YNrz+g4qLFMSM0oXsMDFogYw0hk4tERSzGSrbepYDlhuheYamYd3Tfx6NQNCY773X2dBCZ8d17oA==
+"@propelleraero/cesium-loaders@5.1.0":
+  version "5.1.0"
+  resolved "https://registry.yarnpkg.com/@propelleraero/cesium-loaders/-/cesium-loaders-5.1.0.tgz#abfd0acfa7989b9bcde715f2c452673d130949a3"
+  integrity sha512-+kGR03ksqsmsbpCdh/eMSipTO8R6P9taYMfNd2Af+LR/Pfgkbts1VQGC5tNuVtRgDGvtoU/HnKBLyfcGFkqxtg==
   dependencies:
+    cesium "^1.112.0"
     node-fetch "^2.6.1"
-
-"@propelleraero/geometry-algorithms@^2.0.1":
-  version "2.0.1"
-  resolved "https://registry.yarnpkg.com/@propelleraero/geometry-algorithms/-/geometry-algorithms-2.0.1.tgz#ccf285148ee4eb890613d4fd6e2532bba4647aa5"
-  integrity sha512-Dye4ouI7ySrkXuKXpwodkRQ/uiFba85nWVbuZ96yWuhF+Oh4syTlYBJVzrESbfP8WYi2rC16uLgWbZDgl6fEgg==
-  dependencies:
-    "@cesium/engine" "6.x"
-    lodash-es "^4.17.21"
-    rtree "^1.4.2"
 
 "@protobufjs/aspromise@^1.1.1", "@protobufjs/aspromise@^1.1.2":
   version "1.1.2"
@@ -725,13 +739,13 @@
   dependencies:
     "@types/istanbul-lib-report" "*"
 
-"@types/jest@^26.0.24":
-  version "26.0.24"
-  resolved "https://registry.yarnpkg.com/@types/jest/-/jest-26.0.24.tgz#943d11976b16739185913a1936e0de0c4a7d595a"
-  integrity sha512-E/X5Vib8BWqZNRlDxj9vYXhsDwPYbPINqKF9BsnSoon4RQ0D9moEuLD8txgyypFLH7J4+Lho9Nr/c8H0Fi+17w==
+"@types/jest@^29.x":
+  version "29.5.11"
+  resolved "https://registry.yarnpkg.com/@types/jest/-/jest-29.5.11.tgz#0c13aa0da7d0929f078ab080ae5d4ced80fa2f2c"
+  integrity sha512-S2mHmYIVe13vrm6q4kN6fLYYAka15ALQki/vgDC3mIukEOx8WJlv0kQPM+d4w8Gp6u0uSdKND04IlTXBv0rwnQ==
   dependencies:
-    jest-diff "^26.0.0"
-    pretty-format "^26.0.0"
+    expect "^29.0.0"
+    pretty-format "^29.0.0"
 
 "@types/node@*", "@types/node@>=13.7.0":
   version "20.10.3"
@@ -749,13 +763,6 @@
   version "21.0.3"
   resolved "https://registry.yarnpkg.com/@types/yargs-parser/-/yargs-parser-21.0.3.tgz#815e30b786d2e8f0dcd85fd5bcf5e1a04d008f15"
   integrity sha512-I4q9QU9MQv4oEOz4tAHJtNz1cwuLxn2F3xcc2iV5WdqLPpUnj30aUuxt1mAxYTG+oe8CZMV/+6rU4S4gRDzqtQ==
-
-"@types/yargs@^15.0.0":
-  version "15.0.19"
-  resolved "https://registry.yarnpkg.com/@types/yargs/-/yargs-15.0.19.tgz#328fb89e46109ecbdb70c295d96ff2f46dfd01b9"
-  integrity sha512-2XUaGVmyQjgyAZldf0D0c14vvo/yv0MhQBSTJcejMMaitsn3nxCB6TmH4G0ZQf+uxROOa9mpanoSm8h6SG/1ZA==
-  dependencies:
-    "@types/yargs-parser" "*"
 
 "@types/yargs@^17.0.8":
   version "17.0.32"
@@ -776,7 +783,7 @@ ansi-escapes@^4.2.1:
   dependencies:
     type-fest "^0.21.3"
 
-ansi-regex@^5.0.0, ansi-regex@^5.0.1:
+ansi-regex@^5.0.1:
   version "5.0.1"
   resolved "https://registry.yarnpkg.com/ansi-regex/-/ansi-regex-5.0.1.tgz#082cb2c89c9fe8659a311a53bd6a4dc5301db304"
   integrity sha512-quJQXlTSUGL2LH9SUXo8VwsY4soanhgo6LNSm84E1LBcE8s3O0wpdiRzyR9z/ZZJMlMWv37qOOb9pdJlMUEKFQ==
@@ -956,6 +963,22 @@ caniuse-lite@^1.0.30001565:
   resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001566.tgz#61a8e17caf3752e3e426d4239c549ebbb37fef0d"
   integrity sha512-ggIhCsTxmITBAMmK8yZjEhCO5/47jKXPu6Dha/wuCS4JePVL+3uiDEBuhu2aIoT+bqTOR8L76Ip1ARL9xYsEJA==
 
+cesium@1.112:
+  version "1.112.0"
+  resolved "https://registry.yarnpkg.com/cesium/-/cesium-1.112.0.tgz#b5798d993e7e4c662ab7fd375087aeee54270db1"
+  integrity sha512-johaLB97GIBZF9qEfKHc04vQHgh3B0tikFE+QA5W+ZsL97KQjTcdlgwGNxCT2yMCgN5hZ+eSynoQhkqLdFuUDA==
+  dependencies:
+    "@cesium/engine" "^6.1.1"
+    "@cesium/widgets" "^4.3.1"
+
+cesium@^1.112.0:
+  version "1.113.0"
+  resolved "https://registry.yarnpkg.com/cesium/-/cesium-1.113.0.tgz#5a3a5a2806c8f73fb822d2e982b70f246fb18d4c"
+  integrity sha512-OtbeMGXZn2dlNVYWCeq0JeGjgFPikXp6aTjo/azzuvOTj3JwgVie0tgNUGVlYDVi+fMPQqttC14lJbPYRL7etw==
+  dependencies:
+    "@cesium/engine" "^6.2.0"
+    "@cesium/widgets" "^4.4.0"
+
 chalk@^2.4.2:
   version "2.4.2"
   resolved "https://registry.yarnpkg.com/chalk/-/chalk-2.4.2.tgz#cd42541677a54333cf541a49108c1432b44c9424"
@@ -1090,11 +1113,6 @@ detect-newline@^3.0.0:
   resolved "https://registry.yarnpkg.com/detect-newline/-/detect-newline-3.1.0.tgz#576f5dfc63ae1a192ff192d8ad3af6308991b651"
   integrity sha512-TLz+x/vEXm/Y7P7wn1EJFNLxYpUD4TgMosxY6fAVJUnJMbupHBOncxyWUG9OpTaH9EBD7uFI5LfEgmMOc54DsA==
 
-diff-sequences@^26.6.2:
-  version "26.6.2"
-  resolved "https://registry.yarnpkg.com/diff-sequences/-/diff-sequences-26.6.2.tgz#48ba99157de1923412eed41db6b6d4aa9ca7c0b1"
-  integrity sha512-Mv/TDa3nZ9sbc5soK+OoA74BsS3mL37yixCvUAQkiuA4Wz6YtwP/K47n2rv2ovzHZvoiQeA5FTQOschKkEwB0Q==
-
 diff-sequences@^29.6.3:
   version "29.6.3"
   resolved "https://registry.yarnpkg.com/diff-sequences/-/diff-sequences-29.6.3.tgz#4deaf894d11407c51efc8418012f9e70b84ea921"
@@ -1177,7 +1195,7 @@ exit@^0.1.2:
   resolved "https://registry.yarnpkg.com/exit/-/exit-0.1.2.tgz#0632638f8d877cc82107d30a0fff1a17cba1cd0c"
   integrity sha512-Zk/eNKV2zbjpKzrsQ+n1G6poVbErQxJ0LBOJXaKZ1EViLzH+hrLu9cdXI4zw9dBQJslwBEpbQ2P1oS7nDxs6jQ==
 
-expect@^29.7.0:
+expect@^29.0.0, expect@^29.7.0:
   version "29.7.0"
   resolved "https://registry.yarnpkg.com/expect/-/expect-29.7.0.tgz#578874590dcb3214514084c08115d8aee61e11bc"
   integrity sha512-2Zks0hf1VLFYI1kbh0I5jP3KHHyCHpkfyHBzsSXRFgl/Bg9mWYfMW8oD+PdMPlEwy5HNsR9JutYy6pMeOh61nw==
@@ -1500,16 +1518,6 @@ jest-config@^29.7.0:
     slash "^3.0.0"
     strip-json-comments "^3.1.1"
 
-jest-diff@^26.0.0:
-  version "26.6.2"
-  resolved "https://registry.yarnpkg.com/jest-diff/-/jest-diff-26.6.2.tgz#1aa7468b52c3a68d7d5c5fdcdfcd5e49bd164394"
-  integrity sha512-6m+9Z3Gv9wN0WFVasqjCL/06+EFCMTqDEUl/b87HYK2rAPTyfz4ZIuSlPhY51PIQRWx5TaxeF1qmXKe9gfN3sA==
-  dependencies:
-    chalk "^4.0.0"
-    diff-sequences "^26.6.2"
-    jest-get-type "^26.3.0"
-    pretty-format "^26.6.2"
-
 jest-diff@^29.7.0:
   version "29.7.0"
   resolved "https://registry.yarnpkg.com/jest-diff/-/jest-diff-29.7.0.tgz#017934a66ebb7ecf6f205e84699be10afd70458a"
@@ -1549,11 +1557,6 @@ jest-environment-node@^29.7.0:
     "@types/node" "*"
     jest-mock "^29.7.0"
     jest-util "^29.7.0"
-
-jest-get-type@^26.3.0:
-  version "26.3.0"
-  resolved "https://registry.yarnpkg.com/jest-get-type/-/jest-get-type-26.3.0.tgz#e97dc3c3f53c2b406ca7afaed4493b1d099199e0"
-  integrity sha512-TpfaviN1R2pQWkIihlfEanwOXK0zcxrKEE4MlU6Tn7keoXdN6/3gK/xl0yEh8DOunn5pOVGKf8hB4R9gVh04ig==
 
 jest-get-type@^29.6.3:
   version "29.6.3"
@@ -1863,11 +1866,6 @@ locate-path@^5.0.0:
   dependencies:
     p-locate "^4.1.0"
 
-lodash-es@^4.17.21:
-  version "4.17.21"
-  resolved "https://registry.yarnpkg.com/lodash-es/-/lodash-es-4.17.21.tgz#43e626c46e6591b7750beb2b50117390c609e3ee"
-  integrity sha512-mKnC+QJ9pWVzv+C4/U3rRsHapFfHvQFoFB92e52xeyGMcX6/OlIl78je1u8vePzYZSkkogMPJ2yjxxsb89cxyw==
-
 lodash.memoize@4.x:
   version "4.1.2"
   resolved "https://registry.yarnpkg.com/lodash.memoize/-/lodash.memoize-4.1.2.tgz#bcc6c49a42a2840ed997f323eada5ecd182e0bfe"
@@ -1978,6 +1976,11 @@ normalize-path@^3.0.0:
   resolved "https://registry.yarnpkg.com/normalize-path/-/normalize-path-3.0.0.tgz#0dcd69ff23a1c9b11fd0978316644a0388216a65"
   integrity sha512-6eZs5Ls3WtCisHWp9S2GUy8dqkpGi4BVSz3GaqiE6ezub0512ESztXUwUB6C6IKbQkY2Pnb/mD4WYojCRwcwLA==
 
+nosleep.js@^0.12.0:
+  version "0.12.0"
+  resolved "https://registry.yarnpkg.com/nosleep.js/-/nosleep.js-0.12.0.tgz#a01fddab2c13af357d673928b1f40a9013a4dc08"
+  integrity sha512-9d1HbpKLh3sdWlhXMhU6MMH+wQzKkrgfRkYV0EBdvt99YJfj0ilCJrWRDYG2130Tm4GXbEoTCx5b34JSaP+HhA==
+
 npm-run-path@^4.0.1:
   version "4.0.1"
   resolved "https://registry.yarnpkg.com/npm-run-path/-/npm-run-path-4.0.1.tgz#b7ecd1e5ed53da8e37a55e1c2269e0b97ed748ea"
@@ -2082,17 +2085,7 @@ pkg-dir@^4.2.0:
   dependencies:
     find-up "^4.0.0"
 
-pretty-format@^26.0.0, pretty-format@^26.6.2:
-  version "26.6.2"
-  resolved "https://registry.yarnpkg.com/pretty-format/-/pretty-format-26.6.2.tgz#e35c2705f14cb7fe2fe94fa078345b444120fc93"
-  integrity sha512-7AeGuCYNGmycyQbCqd/3PWH4eOoX/OiCa0uphp57NVTeAGdJGaAliecxwBDHYQCIvrW7aDBZCYeNTP/WX69mkg==
-  dependencies:
-    "@jest/types" "^26.6.2"
-    ansi-regex "^5.0.0"
-    ansi-styles "^4.0.0"
-    react-is "^17.0.1"
-
-pretty-format@^29.7.0:
+pretty-format@^29.0.0, pretty-format@^29.7.0:
   version "29.7.0"
   resolved "https://registry.yarnpkg.com/pretty-format/-/pretty-format-29.7.0.tgz#ca42c758310f365bfa71a0bda0a807160b776812"
   integrity sha512-Pdlw/oPxN+aXdmM9R00JVC9WVFoCLTKJvDVLgmJ+qAffBMxsV85l/Lu7sNx4zSzPyoL2euImuEwHhOXdEgNFZQ==
@@ -2144,11 +2137,6 @@ rbush@^3.0.1:
   dependencies:
     quickselect "^2.0.0"
 
-react-is@^17.0.1:
-  version "17.0.2"
-  resolved "https://registry.yarnpkg.com/react-is/-/react-is-17.0.2.tgz#e691d4a8e9c789365655539ab372762b0efb54f0"
-  integrity sha512-w2GsyukL62IJnlaff/nRegPQR94C/XXamvMWmSHRJ4y7Ts/4ocGRmTHvOs8PSE6pB3dWOrD/nueuU5sduBsQ4w==
-
 react-is@^18.0.0:
   version "18.2.0"
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-18.2.0.tgz#199431eeaaa2e09f86427efbb4f1473edb47609b"
@@ -2184,11 +2172,6 @@ resolve@^1.20.0:
     is-core-module "^2.13.0"
     path-parse "^1.0.7"
     supports-preserve-symlinks-flag "^1.0.0"
-
-rtree@^1.4.2:
-  version "1.4.2"
-  resolved "https://registry.yarnpkg.com/rtree/-/rtree-1.4.2.tgz#8b8c588c58a1f87fea5da2d497ae3b2c5e4bb32e"
-  integrity sha512-ghyCuNLgwDv4tiMT1bUrIFv/q2OSSBm4Ohjsz0NW0vFw9OF6wixMELK6empeOlAcv+mQ34W/aDgJk7aLGLeU5g==
 
 semver@^6.3.0, semver@^6.3.1:
   version "6.3.1"

@@ -19,14 +19,13 @@
   },
   "homepage": "https://github.com/bromix/typescript-jest-example#readme",
   "devDependencies": {
-    "@types/jest": "^26.0.24",
+    "@types/jest": "^29.x",
     "jest": "^29.x",
     "ts-jest": "^29.1.1",
     "typescript": "^5.1.6"
   },
   "dependencies": {
-    "@cesium/engine": "^6.1.1",
-    "@propelleraero/cesium-loaders": "^4.9.0",
-    "@propelleraero/geometry-algorithms": "^2.0.1"
+    "cesium" : "1.112",
+    "@propelleraero/cesium-loaders": "5.1.0"
   }
 }
