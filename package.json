@@ -25,6 +25,7 @@
     "typescript": "^5.x"
   },
   "dependencies": {
+    "typescript-jest-example1" : "^1.",
     "@propelleraero/cesium-loaders": "^5.1.0",
     "cesium": "^1.112.0"
   }
